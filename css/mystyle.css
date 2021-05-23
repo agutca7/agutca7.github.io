@@ -1,0 +1,17 @@
+body {
+    margin: 5px;
+}
+
+#fodoboz {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fbtn {
+    border: 1px solid #369ec7;
+    border-radius: 15px;
+    font-size: 25px;
+    background-color: #42c2f5;
+    color: white;
+    padding: 3px;
+}
