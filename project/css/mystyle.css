@@ -3,10 +3,16 @@
 /* Fonts End */
 
 body {
-    background-color: salmon;    
+    background-color: salmon;      
 }
 
 /*  Navbar   */
+.navbar{
+    max-width: 100%;
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 .navbar-nav {
     float: none;
     margin: 0 auto;
@@ -14,7 +20,7 @@ body {
     text-align: center;
     user-select: none; 
     font-family: 'Pattaya', sans-serif;
-    font-size: 24px; 
+    font-size: 24px;   
 }
 
 .navbar-nav > li {
@@ -24,5 +30,27 @@ body {
 /* Navbar End  */
 
 /* Banner */
-
+.banner {
+    width: 100%;
+    height: auto;
+  }
 /* Banner End */
+
+/* Basket */
+.basketText{
+    font-size: 20px;
+    font-weight: bolder;    
+}
+
+#food{
+    color: gray;
+    font-size: 12px;
+}
+/* Basket End */
+
+/* Icons */
+.icon{
+    height: 32px;
+    width: 32px;
+}
+/*Icons End*/
