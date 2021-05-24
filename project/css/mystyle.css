@@ -3,54 +3,66 @@
 /* Fonts End */
 
 body {
-    background-color: salmon;      
+    background: #578CFE; 
+    background: -webkit-linear-gradient(to right, #578CFE, #fff); 
+    background: linear-gradient(to right, #578CFE, #fff); 
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
 }
 
 /*  Navbar   */
-.navbar{
+.navbar {
     max-width: 100%;
     height: auto;
     padding-top: 0px;
     padding-bottom: 0px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);  
 }
+
 .navbar-nav {
     float: none;
     margin: 0 auto;
     display: block;
     text-align: center;
-    user-select: none; 
+    user-select: none;
     font-family: 'Pattaya', sans-serif;
-    font-size: 24px;   
+    font-size: 24px;
 }
 
-.navbar-nav > li {
+.navbar-nav>li {
     display: inline-block;
     float: none;
 }
+
 /* Navbar End  */
 
 /* Banner */
 .banner {
     width: 100%;
     height: auto;
-  }
+}
+
 /* Banner End */
 
 /* Basket */
-.basketText{
+.basketText {
     font-size: 20px;
-    font-weight: bolder;    
+    font-weight: bolder;
 }
 
-#food{
+#food {
     color: gray;
     font-size: 12px;
 }
+
 /* Basket End */
 
 /* Icons */
-.icon{
+.icon {
     height: 32px;
     width: 32px;
 }
+
 /*Icons End*/
