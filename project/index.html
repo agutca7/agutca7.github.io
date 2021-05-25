@@ -1,60 +1,53 @@
-<!DOCTYPE html>
-
-<html lang="hu">
-
 <head>
-  <title>GetYourFood.</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/mystyle.css">
-  <script src="js/code.js"></script>
-</head>
-
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Kolis konyha</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+  </head>
 <body>
-  <div>
-    <img src="images/banner.png" class="banner"> <!-- ideiglenes kép -->
-  </div>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <!-- Nav bal oldal -->
-    <ul class="navbar-nav ">
-      <li class="nav-item">
-        <a class="navbar-brand" href="#"><img src="images/diet.svg" class="icon"><span class="basketText"
-            id="food">food.</span></a> <!-- Logo helye -->
-      </li>
-    </ul>
-    <!-- Nav közép -->
-    <div class="navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Főoldal<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Kínálatunk</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Kiszállítás</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Rólunk</a>
-        </li>
-      </ul>
+<!-- Grid layout: https://codepen.io/angeladelise/pen/YzXLdyq?editors=1100 -->
+  <div class="containerFoOldal">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Kolis konyha</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Főoldal<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kínálatunk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kiszállítás</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rólunk</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <main></main>
+    <div id="content1" class="content"></div>
+    <div id="content2" class="content"></div>
+    <div id="content3" class="content"></div>
+  <footer class="bg-white">
+    <div class="bg-light py-4">
+      <div class="container text-center">
+        <p class="mb-0 py-2">© 2019 Bootstrapious All rights reserved.</p>
+      </div>
     </div>
-    <!-- Nav jobb oldal -->
-    <ul class="navbar-nav ">
-      <li class="nav-item">
-        <a class="nav-link" href="#"><img src="images/shopping-basket.svg" class="icon"><span
-            class="basketText">Kosár</span></a> <!-- Ez majd jobb/bal oldalt lesz elhelyezve -->
-      </li>
-    </ul>
-  </nav>
-
-  <main>
-
-  </main>
-
-  <footer>
-
   </footer>
+  </div>
 </body>
-
-</html>
+  
