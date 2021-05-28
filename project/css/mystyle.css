@@ -11,7 +11,7 @@ body {
     height: 100vh;
     width: 100vw;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.5fr 0.1fr;
+    grid-template-rows: 0.1fr 1.5fr 0.1fr;
     grid-template-areas:
         "nav nav nav"
         "main main main"
@@ -21,7 +21,7 @@ body {
     font-size: 15px;
     color: #004d40;
     font-family: 'Pattaya', sans-serif;
-    background-color: whitesmoke;
+    background-color: snow;
 }
 
 nav {
@@ -29,6 +29,7 @@ nav {
     border-bottom: 3px solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(to right, salmon, red, blue, green, #004d40);
+    user-select: none;
 }
 
 main {
@@ -40,7 +41,6 @@ main {
 
 footer {
     grid-area: footer;
-    height: 100px;
     box-shadow: 0.4px 0.4px 0.4px 0.4px;
 }
 
@@ -53,10 +53,12 @@ a {
     margin: 0.5rem;
 }
 
+/* Grid layout: https://codepen.io/angeladelise/pen/YzXLdyq?editors=1100 */
+
 @media only screen and (max-width: 550px) {
     .containerFoOldal {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 2.2fr 0.4fr;
+        grid-template-rows: 0.1fr 1.5fr 0.1fr;
         grid-template-areas:
             "nav"
             "main"
@@ -93,5 +95,8 @@ a.navbar-brand {
 }
 
 .card{
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin: 15px auto 25px auto; 
+    float: none;
 }
