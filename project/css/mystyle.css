@@ -89,5 +89,9 @@ a.navbar-brand {
 }
 
 .bigText {
-    font-size: 30px;
+    font-size: 21px;
+}
+
+.card{
+    margin-top: 20px;
 }
