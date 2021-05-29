@@ -69,7 +69,8 @@ a {
             "footer";
     }
 }
-a.nav-link{
+
+a.nav-link {
     transition: all .2s ease-in-out;
 }
 
@@ -102,22 +103,22 @@ a.navbar-brand {
 }
 
 .bevText {
-    font-size: 15px;
+    font-size: 200%;
     padding-left: 40px;
     padding-right: 40px;
     text-align: justify;
     font-weight: 100;
 }
 
-#bold{
+#bold {
     font-weight: bold;
 }
 
-.card{
+.card {
     margin-top: 15px;
     margin-bottom: 25px;
-    margin: 15px auto 25px auto; 
-    float: none;  
+    margin: 15px auto 25px auto;
+    float: none;
 }
 
 #badge {
@@ -133,17 +134,17 @@ a.navbar-brand {
     white-space: nowrap;
 }
 
-.icon{
+.icon {
     height: 30px;
     width: 30px;
 }
 
-@keyframes fadeIn{
-    0%{
+@keyframes fadeIn {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
-
