@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
     overflow-x: hidden;
@@ -20,8 +21,9 @@ body {
     font-weight: 800;
     font-size: 15px;
     color: #004d40;
-    font-family: 'Pattaya', sans-serif;
     background-color: snow;
+    animation: fadeIn linear 2s;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -30,6 +32,7 @@ nav {
     border-image-slice: 1;
     border-image-source: linear-gradient(to right, salmon, red, blue, green, #004d40);
     user-select: none;
+    font-family: 'Pattaya', sans-serif;
 }
 
 main {
@@ -42,6 +45,7 @@ main {
 footer {
     grid-area: footer;
     box-shadow: 0.4px 0.4px 0.4px 0.4px;
+    font-family: 'Pattaya', sans-serif;
 }
 
 a {
@@ -65,10 +69,12 @@ a {
             "footer";
     }
 }
+a.nav-link{
+    transition: all .2s ease-in-out;
+}
 
 a.nav-link:hover {
-    transition: all 200ms ease-in;
-    transform: scale(1.5)
+    transform: scale(1.4);
 }
 
 a.navbar-brand {
@@ -90,13 +96,54 @@ a.navbar-brand {
     visibility: hidden;
 }
 
-.bigText {
-    font-size: 21px;
+#kosar {
+    height: 0%;
+    visibility: hidden;
+}
+
+.bevText {
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify;
+    font-weight: 100;
+}
+
+#bold{
+    font-weight: bold;
 }
 
 .card{
     margin-top: 15px;
     margin-bottom: 25px;
     margin: 15px auto 25px auto; 
-    float: none;
+    float: none;  
 }
+
+#badge {
+    background-color: #004d40;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    font-size: 9px;
+    line-height: 1;
+    padding: 5px 7px;
+    text-align: center;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.icon{
+    height: 30px;
+    width: 30px;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+

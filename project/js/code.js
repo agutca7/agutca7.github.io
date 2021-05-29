@@ -5,12 +5,10 @@ function $(id){
 }
 
 function init(){
-    let fooldalNav = $("fooldalNav");
-    let menuNav = $("menuNav");
-    let szallitasNav= $("szallitasNav");
-    fooldalNav.addEventListener("click", fooldalValto, false);
-    menuNav.addEventListener("click", menuValto, false);
-    szallitasNav.addEventListener("click", szallitasValto, false);
+    $("fooldalNav").addEventListener("click", fooldalValto, false);
+    $("menuNav").addEventListener("click", menuValto, false);
+    $("szallitasNav").addEventListener("click", szallitasValto, false);
+    $("kosarNav").addEventListener("click",kosarValto,false)
 }
 
 function fooldalValto(){
@@ -31,14 +29,19 @@ function szallitasValto(){
     $("szallitasNavLi").className="nav-item active";
 }
 
+function kosarValto(){
+    navReset();
+    $("kosar").style.visibility="visible";
+    $("kosarNavLi").className="nav-item active";
+}
+
 function navReset(){
     $("fooldal").style.visibility="hidden";
     $("menu").style.visibility="hidden";
     $("szallitas").style.visibility="hidden";
+    $("kosar").style.visibility="hidden";
     $("fooldalNavLi").className="nav-item";
     $("menuNavLi").className="nav-item";
     $("szallitasNavLi").className="nav-item";
+    $("kosarNavLi").className="nav-item";
 }
-
-
-
