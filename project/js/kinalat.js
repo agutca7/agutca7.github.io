@@ -1,8 +1,6 @@
 window.addEventListener("load", init, false);
 
-function $(id){
-    return document.getElementById(id);
-}
+let kosar=[];
 
 function init(){
     $("card1price").addEventListener("click", kosarba, false);
@@ -21,9 +19,9 @@ function init(){
     $("card14price").addEventListener("click", kosarba, false);
     $("card15price").addEventListener("click", kosarba, false);
     $("card16price").addEventListener("click", kosarba, false);
-}
 
-let kosar=[];
+    kosarBetolto();
+}
 
 function kosarba(e){
     let card = e.target.id+"";
@@ -41,13 +39,9 @@ function kosarba(e){
         kosar.push(etel);
     }
 
-    let osszesen=0;
+    $("badge").innerText=kosarMeret();
 
-    for(let i = 0; i < kosar.length; i++){
-        osszesen +=kosar[i].mennyiseg;
-    }
-
-    $("badge").innerText=osszesen;
+    sessionStorage.setItem("kosar", JSON.stringify(kosar));
 
     console.log(kosar);
 }
@@ -67,6 +61,7 @@ function kosarScanner(name){
 function peldanyosito(cardId){
     let etel = {
         nev: $(cardId+"name").innerText,
+        id: cardId.substring(4),
         ar: $(cardId+"price").value.split(" ")[0],
         mennyiseg: 1
     }
