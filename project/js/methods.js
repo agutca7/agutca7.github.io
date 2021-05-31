@@ -12,7 +12,7 @@ function kosarBetolto(){
 function kosarMeret(){
     let osszesen=0;
 
-    if(kosar.length!=0){
+    if(sessionStorage.getItem("kosar") != null && kosar.length!=0){
         let i=0;
         while(i<kosar.length){
             osszesen+= kosar[i].mennyiseg;
@@ -21,4 +21,9 @@ function kosarMeret(){
     }
 
     return osszesen;
+}
+
+function kosarReset(){
+    kosar=[];
+    sessionStorage.setItem("kosar", null);
 }
