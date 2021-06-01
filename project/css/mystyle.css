@@ -91,7 +91,7 @@ a.navbar-brand {
     text-align: justify;
     font-weight: 100;
     letter-spacing: 3px;
-    text-indent: 50px; 
+    text-indent: 50px;
 }
 
 #bold {
@@ -105,15 +105,15 @@ a.navbar-brand {
     float: none;
 }
 
-.card-title{
+.card-title {
     font-family: 'Pattaya', sans-serif;
 }
 
-.card-text{
+.card-text {
     font-size: 15px;
 }
 
-.btn{
+.btn {
     font-family: 'Pattaya', sans-serif;
 }
 
@@ -135,6 +135,11 @@ a.navbar-brand {
     width: 30px;
 }
 
+.biggerIcon {
+    height: 44px;
+    width: 44px;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -143,4 +148,13 @@ a.navbar-brand {
     100% {
         opacity: 1;
     }
+}
+
+ul {
+    list-style-type: disc;
+}
+
+.kiszCim {
+    text-align: center;
+    padding-top: 15px;
 }

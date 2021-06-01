@@ -43,7 +43,7 @@ function kosarba(e){
 
     sessionStorage.setItem("kosar", JSON.stringify(kosar));
 
-    console.log(kosar);
+    console.log(kosarMeret());
 }
 
 function kosarScanner(name){
