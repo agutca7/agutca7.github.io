@@ -29,15 +29,36 @@ function kosarRender(){
         for(let i = 0; i < kosar.length; i++){
             $("kosarTablazat").innerHTML+='<tr> <th scope="row" id="'+ i +'">'+ (i+1) +'</th> <td>'+ kosar[i].nev +'</td> <td>'+ kosar[i].ar +' Yang</td> <td><input type="number" value="'+ kosar[i].mennyiseg +'" min="0" onKeyDown="return false" id="mennyisegTd'+ i +'"></td> </tr>';
         }
-        $("kosarTablazat").innerHTML+='<tr> <th scope="row" colspan="2">Összesen</th> <td id="fizetendo">'+ kosarOsszeg() +' Yang</td> <td><input type="button" value="Megrendel" id="rendel"></td> </tr>';
+        $("kosarTablazat").innerHTML+='<tr> <th scope="row" colspan="2">Összesen</th> <td id="fizetendo">'+ kosarOsszeg() +' Yang</td> <td><input type="button" value="Adatok megadása" id="rendel"></td> </tr>';
+        $("rendel").addEventListener("click", rendeles, false);
     }else{
         window.alert("Üres a kosarad!")
     }
 }
 
+function rendeles(){
+    $("form1").style.display="block";
+    $("fizetesiMod").addEventListener("change", kartyasFizetes, false);
+    $("veglegesites1").addEventListener("click", veglegesites, false);
+    $("veglegesites2").addEventListener("click", veglegesites, false);
+}
+
+function veglegesites(){
+    window.alert("Köszönkük a rendelését");
+}
+
+function kartyasFizetes(){
+    $("form2").style.display="none";
+    $("veglegesites1").style.display="block";
+
+    if($("gridRadios2").checked){
+        $("form2").style.display="block";
+        $("veglegesites1").style.display="none";
+    }
+}
+
 function kosarOsszeg(){
     let vegosszeg=0;
-
     if(kosar.length!=0){
         for(let i = 0;i < kosar.length; i++){
             vegosszeg+=kosar[i].ar*kosar[i].mennyiseg;

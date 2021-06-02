@@ -44,7 +44,7 @@ main {
 
 footer {
     grid-area: footer;
-    box-shadow: 0.4px 0.4px 0.4px 0.4px;
+    box-shadow: 0.4px;
     font-family: 'Pattaya', sans-serif;
 }
 
@@ -157,4 +157,17 @@ ul {
 .kiszCim {
     text-align: center;
     padding-top: 15px;
+}
+
+.kartyaSvg {
+    height: 60px;
+    width: 128px;
+}
+
+#form1 {
+    display: none;
+}
+
+#form2 {
+    display: none;
 }
