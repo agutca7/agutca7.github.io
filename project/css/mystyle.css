@@ -3,6 +3,7 @@
 
 body {
     overflow-x: hidden;
+    user-select: none;
 }
 
 /* Grid layout: https://codepen.io/angeladelise/pen/YzXLdyq?editors=1100 */
@@ -19,7 +20,7 @@ body {
         "footer footer footer";
     font-weight: 800;
     font-size: 15px;
-    color: #004d40;
+    color: black;
     background-color: snow;
     animation: fadeIn linear 1.2s;
     font-family: 'Roboto', sans-serif;
@@ -30,7 +31,6 @@ nav {
     border-bottom: 3px solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(to right, salmon, red, blue, green, #004d40);
-    user-select: none;
     font-family: 'Pattaya', sans-serif;
 }
 
@@ -85,13 +85,12 @@ a.navbar-brand {
 
 .bevText {
     margin-top: 80px;
-    font-size: 200%;
+    font-size: 300%;
     padding-left: 40px;
     padding-right: 40px;
-    text-align: justify;
+    text-align: center;
     font-weight: 100;
-    letter-spacing: 3px;
-    text-indent: 50px;
+    font-style: italic;
 }
 
 #bold {
@@ -150,13 +149,23 @@ a.navbar-brand {
     }
 }
 
-ul {
+ul{
     list-style-type: disc;
 }
 
+li{
+    margin: 5px 0px 5px 0px;
+}
+
 .kiszCim {
-    text-align: center;
     padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#kiemelt{
+    font-weight: bold;
 }
 
 .kartyaSvg {
@@ -169,5 +178,26 @@ ul {
 }
 
 #form2 {
+    display: none;
+}
+
+.uzenes{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    top: 40%;
+    text-align: center;
+}
+
+#koszonesDiv{
+    display: none;
+}
+
+.uzenesSzoveg{
+    font-size: 112px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+#uresKosarDiv{
     display: none;
 }
