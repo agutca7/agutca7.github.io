@@ -84,7 +84,7 @@ a.navbar-brand {
 }
 
 .bevText {
-    margin-top: 80px;
+    margin-top: 5px;
     font-size: 300%;
     padding-left: 40px;
     padding-right: 40px;
@@ -149,11 +149,11 @@ a.navbar-brand {
     }
 }
 
-ul{
+ul {
     list-style-type: disc;
 }
 
-li{
+li {
     margin: 5px 0px 5px 0px;
 }
 
@@ -164,7 +164,7 @@ li{
     font-weight: bold;
 }
 
-#kiemelt{
+#kiemelt {
     font-weight: bold;
 }
 
@@ -181,7 +181,7 @@ li{
     display: none;
 }
 
-.uzenes{
+.uzenes {
     position: relative;
     margin: auto;
     width: 100%;
@@ -189,15 +189,15 @@ li{
     text-align: center;
 }
 
-#koszonesDiv{
+#koszonesDiv {
     display: none;
 }
 
-.uzenesSzoveg{
+.uzenesSzoveg {
     font-size: 112px;
     font-family: 'Pattaya', sans-serif;
 }
 
-#uresKosarDiv{
+#uresKosarDiv {
     display: none;
 }

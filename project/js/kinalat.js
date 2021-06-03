@@ -42,8 +42,6 @@ function kosarba(e){
     $("badge").innerText=kosarMeret();
 
     sessionStorage.setItem("kosar", JSON.stringify(kosar));
-
-    console.log(kosarMeret());
 }
 
 function kosarScanner(name){

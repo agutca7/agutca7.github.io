@@ -12,6 +12,7 @@ function kosarFrissito(){
     for(let i = 0;i <kosar.length;i++){
         kosar[i].mennyiseg=$("mennyisegTd"+i).value;
     }
+    
     sessionStorage.setItem("kosar", JSON.stringify(kosar));
     $("badge").innerText=kosarMeret();
 
@@ -26,9 +27,11 @@ function kosarFrissito(){
 
 function kosarRender(){
     if(kosar.length!=0){
+
         for(let i = 0; i < kosar.length; i++){
             $("kosarTablazat").innerHTML+='<tr> <th scope="row" id="'+ i +'">'+ (i+1) +'</th> <td>'+ kosar[i].nev +'</td> <td>'+ kosar[i].ar +' Yang</td> <td><input type="number" value="'+ kosar[i].mennyiseg +'" min="0" onKeyDown="return false" id="mennyisegTd'+ i +'"></td> </tr>';
         }
+
         $("kosarTablazat").innerHTML+='<tr> <th scope="row" colspan="2">Összesen</th> <td id="fizetendo">'+ kosarOsszeg() +' Yang</td> <td><input type="button" class="btn btn-primary" value="Adatok megadása" id="rendel"></td> </tr>';
         $("rendel").addEventListener("click", rendeles, false);
     }else{
@@ -47,6 +50,7 @@ function rendeles(){
 function veglegesites(){
     $("valtas").style.display="none";
     $("koszonesDiv").style.display="block";
+    kosarReset();
 }
 
 function kartyasFizetes(){

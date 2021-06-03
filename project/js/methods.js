@@ -14,7 +14,6 @@ function kosarBetolto(){
             i--;
         }
     }
-
 }
 
 function kosarMeret(){
@@ -33,5 +32,6 @@ function kosarMeret(){
 
 function kosarReset(){
     kosar=[];
-    sessionStorage.setItem("kosar", null);
+    sessionStorage.setItem("kosar", JSON.stringify(kosar));
+    $("badge").innerText="0";
 }
