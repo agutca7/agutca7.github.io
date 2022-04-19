@@ -1,0 +1,28 @@
+body{
+    background-color: #E9EFC0;
+}
+
+#main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+}
+
+.tartalom{
+    background-color: #83BD75;
+}
+
+header, footer{
+    background: #4E944F;
+    text-align: center;
+}
+
+form{
+    padding: 5px 5px 5px 5px;
+    background-color: #B4E197;
+}
+
+
